@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    /*margin externe est remit à 0 */
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* ==========header========== */
+/* Container de l'entête */
+header {
+    background-color: rgba(7, 7, 7, 0.979);
+    opacity: 0.8;
+    padding: 15px 5%;
+    align-items: center;
+}
+
+/* Div: mettre le style de div, le logo à gauche et le menu à droite */
+.nav-container {
+    /* box-shadow: 10px 3px 14px rgb(35, 34, 32); */
+    display: flex;
+    /* display pour aligner les elements de la même ligne */
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    z-index: 1;
+    border-radius: 8px;
+}
+
+.nav-container h1 {
+    color: white;
+    text-decoration: overline underline;
+}
+
+span {
+    color: #af2d6e;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+body{
+    background-color: beige;
+
+}
+
+.div1 {
+    margin-top: 6%;
+    margin-left: 35%;
+    width: 30%;
+    padding: 90px;
+    border: 2px solid black;
+}
+
+.div1 .Fac {
+    color: blue;
+}
+
+.div1 li {
+    text-decoration: none;
+    font-size: 18px;
+    list-style: none;
+    line-height: 35px;
+}
+
+.div1 .span1{
+    margin-left: 24%;
+    color: black;
+}
+
+.div1 h2 {
+    margin-bottom: 20px;
+    text-decoration: underline;
+}
+
+footer {
+    /* Pied de page (footer) */
+    background-color: rgba(7, 7, 7, 0.979);
+    opacity: 0.8;
+    padding: 15px 5%;
+    align-items: center;
+    color: white;
+    text-align: center;
+    margin-top: 50px;
+}

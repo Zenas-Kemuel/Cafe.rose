@@ -1,0 +1,192 @@
+/* Reset des styles par defaut s'assurer que les navigateurs affichent la liste
+/* *: concerne toute la page */
+* {
+    margin: 0;
+    /*margin externe est remit à 0 */
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* ==========header========== */
+/* Container de l'entête */
+header {
+    background-color: rgba(7, 7, 7, 0.979);
+    opacity: 0.8;
+    padding: 15px 5%;
+    align-items: center;
+}
+
+/* Div: mettre le style de div, le logo à gauche et le menu à droite */
+.nav-container {
+    /* box-shadow: 10px 3px 14px rgb(35, 34, 32); */
+    display: flex;
+    /* display pour aligner les elements de la même ligne */
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    z-index: 1;
+    border-radius: 8px;
+}
+
+.nav-container h1 {
+    color: white;
+    text-decoration: overline underline;
+}
+
+span {
+    color: #af2d6e;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+/* Main partie principale */
+.hero {
+    width: 150%;
+    max-width: 1200px;
+    margin: 20px 0px;
+}
+
+.hero img {
+    width: 112%;
+    height: 50%;
+    border-radius: 8px;
+}
+
+/* Conteneur qui contient le formulaire à gauche et la vidéo à droite  */
+.content-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+    margin: 30px 0px;
+}
+
+.separation {
+    width: 100%;
+    height: 2px;
+    background-color: rgb(0, 204, 255);
+}
+
+.form-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border: 2px solid black;
+    background-color: rgba(7, 7, 7, 0.979);
+    opacity: 0.8;
+    width: 45%;
+    opacity: 1;
+    color: white;
+    /* bordure arrodie */
+    border-radius: 8px;
+    /* marge interne */
+    padding: 15px;
+}
+
+.form-content h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form label {
+    display: block;
+    margin-top: 8px;
+}
+
+form input {
+    width: 100%;
+    padding: 10px 5px 10px 30px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 5px;
+    outline-color: rgb(0, 204, 255)
+}
+
+form i {
+    position: absolute;
+    left: 0px;
+    padding: 14px 20px;
+    color: black;
+}
+
+form button {
+    background-color: rgb(0, 204, 255);
+    width: 100%;
+    padding: 10px;
+    border: none;
+    margin-top: 16px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 30px;
+}
+
+.video {
+    width: 45%;
+}
+
+.video video {
+    width: 100%;
+    border-radius: 8px;
+}
+
+footer {
+    /* Pied de page (footer) */
+    background-color: rgba(7, 7, 7, 0.979);
+    opacity: 0.8;
+    padding: 15px 5%;
+    animation: changecolor infinite;
+    align-items: center;
+    color: white;
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* RESPONSIVE: Règles CSS appliquées aux écrans de taille inférieure à 768px */
+
+@media(max-width:768px) {
+
+    /* Flex direction sert pour aligner les elements  */
+    .nav-container {
+        flex-direction: column;
+    }
+
+    /* Mettre les elements du menu en colonne */
+    .nav-links {
+        flex-direction: column;
+        margin-top: 0px;
+        /* Ajouter un petit espace au dessus */
+    }
+
+    /* Section ou le formulaire est à gauche et la vidéo à droite */
+    .content-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Adapter les enfants de section dont le formulaire à gauche et la vidéio à droite */
+    .form-content,
+    .video {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+}
